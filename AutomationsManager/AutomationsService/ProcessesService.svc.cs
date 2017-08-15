@@ -5,6 +5,7 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
+using System.Threading;
 
 namespace AutomationsService
 {
@@ -14,6 +15,7 @@ namespace AutomationsService
     {
         public string GetData(int value)
         {
+            //Thread.Sleep(3000);
             return string.Format("You entered: {0}", value);
         }
 
