@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using AutomationsManager.Core.Processes;
 
 namespace AutomationsManager.Presentation
 {
@@ -61,6 +62,7 @@ namespace AutomationsManager.Presentation
                 else
                 {
                     lSomeLabel.Text = checkConnectionsStatusTask.Result;
+                    FileOperationsHelper.CopyFile(@"\\Lenovo_Przemek\sql\archive.7z", @"C:\\SQL\\archive.7z");
                 }
             });
         }

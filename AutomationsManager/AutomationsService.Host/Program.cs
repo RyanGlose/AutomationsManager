@@ -31,7 +31,7 @@ namespace AutomationsService.Host
                 using (processesServiceHost = new ServiceHost(typeof(ProcessesService), httpBaseAddress))
                 {
                     //Add Endpoint to Host
-                    processesServiceHost.AddServiceEndpoint(typeof(IProcessesService), new WSDualHttpBinding(), httpBaseAddress);
+                    processesServiceHost.AddServiceEndpoint(typeof(IProcessesService), new BasicHttpBinding(), httpBaseAddress);
 
                     ////Metadata Exchange
                     var behaviour = processesServiceHost.Description.Behaviors.FirstOrDefault(b => b is ServiceMetadataBehavior) as ServiceMetadataBehavior;

@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="SevenZipSharp, Version=0.64.3890.29348, Culture=neutral, PublicKeyToken=20de82c62b055c88, processorArchitecture=MSIL">
       <HintPath>..\packages\SevenZipSharp.0.64\lib\SevenZipSharp.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -47,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Processes\ArchivingHelper.cs" />
+    <Compile Include="Processes\FileOperationsHelper.cs" />
     <Compile Include="Processes\IProcess.cs" />
     <Compile Include="Processes\IProcessResult.cs" />
     <Compile Include="Processes\SQLHelper.cs" />
