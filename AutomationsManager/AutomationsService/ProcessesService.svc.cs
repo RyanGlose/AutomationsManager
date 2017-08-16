@@ -6,6 +6,7 @@ using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
 using System.Threading;
+using AutomationsManager.Core.Processes;
 
 namespace AutomationsService
 {
@@ -16,7 +17,9 @@ namespace AutomationsService
         public string GetData(int value)
         {
             //Thread.Sleep(3000);
-            return string.Format("You entered: {0}", value);
+            SQLHelper.BackupDatabase("AutomationsManagerData");
+            ArchivingHelper.ArchiveFile("D:\\SQL\\backup.bak");
+            return $"You entered: {value}";
         }
 
         public CompositeType GetDataUsingDataContract(CompositeType composite)

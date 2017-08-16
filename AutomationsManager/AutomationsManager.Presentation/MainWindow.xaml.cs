@@ -42,11 +42,25 @@ namespace AutomationsManager.Presentation
             {
                 if (checkConnectionsStatusTask.IsFaulted)
                 {
-                    lSomeLabel.Content = "Could not connect to the service.";
+                    var message = "Could not connect to the service or exception occured.";
+                    message += Environment.NewLine;
+                    message += "========================================";
+                    message += Environment.NewLine;
+                    if (checkConnectionsStatusTask.Exception != null)
+                    {
+                        foreach (var exceptionInnerException in checkConnectionsStatusTask.Exception.InnerExceptions)
+                        {
+                            message += exceptionInnerException.Message;
+                            message += Environment.NewLine;
+                            message += "========================================";
+                            message += Environment.NewLine;
+                        }
+                    }
+                    lSomeLabel.Text = message;
                 }
                 else
                 {
-                    lSomeLabel.Content = checkConnectionsStatusTask.Result;
+                    lSomeLabel.Text = checkConnectionsStatusTask.Result;
                 }
             });
         }

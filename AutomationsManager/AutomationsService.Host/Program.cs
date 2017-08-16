@@ -41,6 +41,12 @@ namespace AutomationsService.Host
                         behaviour.HttpsGetEnabled = true;
                     }
 
+                    var behaviourAttribute = processesServiceHost.Description.Behaviors.FirstOrDefault(b => b is ServiceBehaviorAttribute) as ServiceBehaviorAttribute;
+                    if (behaviourAttribute != null)
+                    {
+                        behaviourAttribute.IncludeExceptionDetailInFaults = true;
+                    }
+
                     //Open
                     processesServiceHost.Open();
                     Console.WriteLine("Service is live now at: {0}", httpBaseAddress);
