@@ -18,7 +18,7 @@ namespace AutomationsService
         {
             //Thread.Sleep(3000);
             SQLHelper.BackupDatabase("AutomationsManagerData");
-            ArchivingHelper.ArchiveFile("D:\\SQL\\backup.bak");
+            ArchivingHelper.ArchiveFile("D:\\Shared\\backup.bak");
             return $"You entered: {value}";
         }
 

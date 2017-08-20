@@ -120,6 +120,12 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AutomationsManager.Core\AutomationsManager.Core.csproj">
+      <Project>{07ac22c4-5601-4a78-b7b6-2d452a545de6}</Project>
+      <Name>AutomationsManager.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\ProcessesService\" />
   </ItemGroup>
   <ItemGroup>
@@ -136,12 +142,6 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\AutomationsManager.Core\AutomationsManager.Core.csproj">
-      <Project>{07ac22c4-5601-4a78-b7b6-2d452a545de6}</Project>
-      <Name>AutomationsManager.Core</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

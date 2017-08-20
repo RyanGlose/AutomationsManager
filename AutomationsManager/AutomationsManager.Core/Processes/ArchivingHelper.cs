@@ -20,7 +20,7 @@ namespace AutomationsManager.Core.Processes
             SevenZipBase.SetLibraryPath(sevenZipPath);
 
             var compressor = new SevenZip.SevenZipCompressor();
-            compressor.CompressFiles("D:\\SQL\\archive.7z", path);
+            compressor.CompressFiles("D:\\Shared\\archive.7z", path);
         }
     }
 }

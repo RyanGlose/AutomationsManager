@@ -33,14 +33,6 @@ namespace AutomationsService.Host
                     //Add Endpoint to Host
                     processesServiceHost.AddServiceEndpoint(typeof(IProcessesService), new BasicHttpBinding(), httpBaseAddress);
 
-                    ////Metadata Exchange
-                    var behaviour = processesServiceHost.Description.Behaviors.FirstOrDefault(b => b is ServiceMetadataBehavior) as ServiceMetadataBehavior;
-                    if (behaviour != null)
-                    {
-                        behaviour.HttpGetEnabled = true;
-                        behaviour.HttpsGetEnabled = true;
-                    }
-
                     var behaviourAttribute = processesServiceHost.Description.Behaviors.FirstOrDefault(b => b is ServiceBehaviorAttribute) as ServiceBehaviorAttribute;
                     if (behaviourAttribute != null)
                     {

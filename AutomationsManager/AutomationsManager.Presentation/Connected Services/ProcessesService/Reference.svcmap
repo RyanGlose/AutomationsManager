@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2e8574c9-124c-4139-88c0-5388f6798738" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d8bff0c9-79e5-41a7-a562-41ed5ff59c5d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,11 +22,11 @@
     <MetadataSource Address="http://localhost:61000/ProcessesService" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ProcessesService.wsdl" MetadataType="Wsdl" ID="5529d6ce-6b6f-4d74-ba7b-701940976367" SourceId="1" SourceUrl="http://localhost:61000/ProcessesService?wsdl" />
-    <MetadataFile FileName="ProcessesService.xsd" MetadataType="Schema" ID="d3897a9a-f766-4309-ba9c-6abd20467481" SourceId="1" SourceUrl="http://localhost:61000/ProcessesService?xsd=xsd2" />
-    <MetadataFile FileName="ProcessesService1.xsd" MetadataType="Schema" ID="23ad6530-9f4d-46cc-8345-94307db73dce" SourceId="1" SourceUrl="http://localhost:61000/ProcessesService?xsd=xsd0" />
-    <MetadataFile FileName="ProcessesService2.xsd" MetadataType="Schema" ID="a34d12d3-5f67-4c16-9a21-ac07e183e322" SourceId="1" SourceUrl="http://localhost:61000/ProcessesService?xsd=xsd1" />
-    <MetadataFile FileName="ProcessesService.disco" MetadataType="Disco" ID="4c955b8a-1dda-497b-b4a4-8ffb2d0d7fea" SourceId="1" SourceUrl="http://localhost:61000/ProcessesService?disco" />
+    <MetadataFile FileName="ProcessesService.wsdl" MetadataType="Wsdl" ID="0859d2b6-3325-4243-968c-71f7ced02f6b" SourceId="1" SourceUrl="http://localhost:61000/ProcessesService?wsdl" />
+    <MetadataFile FileName="ProcessesService.xsd" MetadataType="Schema" ID="17fb9b65-172b-44c3-b64b-a6e89e6a7ac4" SourceId="1" SourceUrl="http://localhost:61000/ProcessesService?xsd=xsd2" />
+    <MetadataFile FileName="ProcessesService1.xsd" MetadataType="Schema" ID="f4b29d66-3bfc-4d16-8f42-ea65982510e8" SourceId="1" SourceUrl="http://localhost:61000/ProcessesService?xsd=xsd0" />
+    <MetadataFile FileName="ProcessesService2.xsd" MetadataType="Schema" ID="b73737c3-cb40-4fa7-aa51-0370f4604728" SourceId="1" SourceUrl="http://localhost:61000/ProcessesService?xsd=xsd1" />
+    <MetadataFile FileName="ProcessesService.disco" MetadataType="Disco" ID="9300515d-3bb8-4133-b5c8-b0706271817b" SourceId="1" SourceUrl="http://localhost:61000/ProcessesService?disco" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

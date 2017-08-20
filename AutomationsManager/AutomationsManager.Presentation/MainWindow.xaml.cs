@@ -62,7 +62,7 @@ namespace AutomationsManager.Presentation
                 else
                 {
                     lSomeLabel.Text = checkConnectionsStatusTask.Result;
-                    FileOperationsHelper.CopyFile(@"\\Lenovo_Przemek\sql\archive.7z", @"C:\\SQL\\archive.7z");
+                    FileOperationsHelper.CopyFile(@"\\Lenovo_Przemek\Shared\archive.7z", @"C:\\SQL\\archive.7z");
                 }
             });
         }

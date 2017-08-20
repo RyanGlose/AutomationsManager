@@ -14,14 +14,15 @@ namespace AutomationsManager.Core.Processes
             var builder = new SqlConnectionStringBuilder();
             builder.DataSource = "localhost\\SQLSERVER2016";
             builder.InitialCatalog = databaseName;
-            builder.UserID = "admin";
-            builder.Password = "admin";
+            builder.IntegratedSecurity= true;
+            //builder.UserID = "admin";
+            //builder.Password = "admin";
 
             using (var connection = new SqlConnection(builder.ConnectionString))
             {
                 connection.Open();
 
-                string commandString = "BACKUP DATABASE " + databaseName + " TO DISK = 'D:\\SQL\\backup.bak' " +
+                string commandString = "BACKUP DATABASE " + databaseName + " TO DISK = 'D:\\Shared\\backup.bak' " +
                                  "WITH COPY_ONLY, COMPRESSION";
 
                 using (var command = new SqlCommand(commandString, connection))
