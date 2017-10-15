@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+VisualStudioVersion = 15.0.26730.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomationsManager.Presentation", "AutomationsManager.Presentation\AutomationsManager.Presentation.csproj", "{D614FD55-8B3F-4CC9-BFA6-EB9249771188}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -13,6 +13,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomationsManager.Core", "AutomationsManager.Core\AutomationsManager.Core.csproj", "{07AC22C4-5601-4A78-B7B6-2D452A545DE6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomationsService.Host", "AutomationsService.Host\AutomationsService.Host.csproj", "{83329326-6088-48FD-994B-CFF5B60BF8EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomationsManager.Core.Interfaces", "AutomationsManager.Core.Interfaces\AutomationsManager.Core.Interfaces.csproj", "{59247D73-B955-47A9-AFD4-2936C18E6687}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,8 +38,15 @@ Global
 		{83329326-6088-48FD-994B-CFF5B60BF8EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83329326-6088-48FD-994B-CFF5B60BF8EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83329326-6088-48FD-994B-CFF5B60BF8EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59247D73-B955-47A9-AFD4-2936C18E6687}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59247D73-B955-47A9-AFD4-2936C18E6687}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59247D73-B955-47A9-AFD4-2936C18E6687}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59247D73-B955-47A9-AFD4-2936C18E6687}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {74BFE6D5-1DD9-4DC3-BC98-FC9EE6A1E6C0}
 	EndGlobalSection
 EndGlobal

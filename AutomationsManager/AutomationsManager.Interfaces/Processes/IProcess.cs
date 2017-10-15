@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AutomationsManager.Core.Processes
+namespace AutomationsManager.Interfaces.Processes
 {
     public interface IProcess
     {
